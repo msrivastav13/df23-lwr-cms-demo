@@ -1,0 +1,47 @@
+# Unique name for this workflow
+name: Salesforce CI
+
+# Definition when the workflow should run
+on:
+    push:
+        branches:
+            - '*'
+# Jobs to be executed
+jobs:
+    experience-cloud-enhanced-lwr-site-deploy:
+        runs-on: ubuntu-latest
+        steps:
+            # Install Salesforce CLI
+            - name: 'Install Salesforce CLI'
+              run: |
+                  wget https://developer.salesforce.com/media/salesforce-cli/sfdx/channels/stable/sfdx-linux-x64.tar.xz
+                  mkdir ~/sfdx
+                  tar xJf sfdx-linux-x64.tar.xz -C ~/sfdx --strip-components 1
+                  echo "$HOME/sfdx/bin" >> $GITHUB_PATH
+                  ~/sfdx/bin/sfdx version
+
+            # Checkout the source code
+            - name: 'Checkout source code'
+              uses: actions/checkout@v2
+
+            # Map branch specific environment variable for authentication
+            - name: 'Generate branch specific environment variable name'
+              id: authvars 
+              shell: bash
+              run: |
+                branch=${GITHUB_REF##*/} 
+                echo "::set-output name=SFDX_URL::SFDX_URL_${branch^^}"
+
+            # Store secret for salesforce org
+            - name: 'Populate auth file with SFDX_URL secret'
+              shell: bash
+              run: |
+                echo ${{ secrets[steps.authvars.outputs.SFDX_URL] }} > ./SFDX_URL.txt
+
+            # Authenticate to Salesforce org
+            - name: 'Authenticate to Salesforce Org'
+              run: sfdx auth:sfdxurl:store -f ./SFDX_URL.txt -a sforg
+
+            # Deploy the experience cloud site
+            - name: 'Deploy the experience cloud site'
+              run: sfdx force:source:deploy --sourcepath="force-app/main/default" --apiversion=52.0 -u sforg
