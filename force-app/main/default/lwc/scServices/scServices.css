@@ -1,0 +1,36 @@
+.services {
+  display: flex;
+  padding: 0 48px;
+  margin: 100px 0;
+}
+.services h2 {
+  margin-right: 250px;
+  white-space: nowrap;
+  color: #327A66;
+  font-size: 40px;
+}
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: space-between;
+}
+.service-tile {
+  border-bottom: 1px solid #767676;
+  width: 30%;
+  padding-bottom: 20px;
+}
+.service-tile img {
+  border-radius: 16px;
+  width: 100%;
+}
+.service-tile h3 {
+  color: #323232;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+.service-tile a, .service-tile a:visited {
+  text-transform: uppercase;
+  color: #767676;
+  text-decoration: none;
+}

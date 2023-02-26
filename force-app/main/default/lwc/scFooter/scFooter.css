@@ -1,0 +1,26 @@
+footer {
+  padding: 48px;
+  background-color: #12392E;
+  color: #FCF9E6;
+}
+footer>div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 48px 0;
+  border-top: 1px solid rgba(50, 122, 102, 0.5);
+}
+.logo { width: 270px; }
+.sitemap-wrapper {
+  display: flex;
+}
+.sitemap-wrapper>div {
+  padding-right: 60px;
+}
+.sitemap-wrapper ul {
+  padding-left: 0;
+}
+.sitemap-wrapper li {
+  list-style: none;
+  margin-bottom: 15px;
+}

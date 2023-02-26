@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>SC Site Testimonial</masterLabel>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property
+                name="quote"
+                type="String"
+                label="Quote"
+                default=""
+            />
+            <property
+                name="authorName"
+                type="String"
+                label="Author Name"
+                default=""
+            />
+            <property
+                name="authorTitle"
+                type="String"
+                label="Author Title"
+                default=""
+            />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

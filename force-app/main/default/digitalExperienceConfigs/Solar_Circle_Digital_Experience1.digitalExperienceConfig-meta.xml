@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DigitalExperienceConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Solar Circle Digital Experience</label>
+    <site>
+        <urlPathPrefix>solarcircle</urlPathPrefix>
+    </site>
+    <space>site/Solar_Circle_Digital_Experience1</space>
+</DigitalExperienceConfig>

@@ -1,0 +1,32 @@
+.jumbotron {
+  padding: 100px 48px;
+}
+h1 {
+  font-weight: 400;
+  font-size: 80px;
+  color: #327A66;
+}
+.button {
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.transparent {
+  padding-bottom: 250px;
+}
+.transparent .button {
+  color: #FFFFFF;
+  background-color: #327A66;
+}
+
+.primary-dark {
+  background-color: #12392E;
+}
+.primary-dark h1 {
+  color: #FCF9E6;
+}
+.primary-dark .button {
+  background-color: #FCF9E6;
+  color: #12392E;
+}

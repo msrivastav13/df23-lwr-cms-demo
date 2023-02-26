@@ -1,0 +1,21 @@
+.testimonial {
+  display: flex;
+  gap: 80px;
+  background-color: #DFF4FF;
+  padding: 160px 50px;
+}
+.quote-image {
+  background-image: url('assets/images/testimonial.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  width: 700px;
+}
+.quote {
+  font-size: 40px;
+  margin-top: 0;
+}
+.author-name {
+  text-transform: uppercase;
+  color: #327A66;
+}

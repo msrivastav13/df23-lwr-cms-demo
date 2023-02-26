@@ -1,0 +1,20 @@
+header {
+  display: flex;
+  padding: 0 48px;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  font-family: ibmFlexSansRegular;
+  color: #12392E;
+}
+.logo { width: 270px; }
+.menu-wrapper {
+  display: flex;
+  gap: 32px;
+}
+.menu, .menu:visited {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: inherit;
+}

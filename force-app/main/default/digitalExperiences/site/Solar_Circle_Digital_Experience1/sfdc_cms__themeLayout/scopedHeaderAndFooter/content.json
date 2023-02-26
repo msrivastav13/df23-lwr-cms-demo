@@ -1,0 +1,80 @@
+{
+  "type" : "sfdc_cms__themeLayout",
+  "title" : "Scoped Header and Footer",
+  "contentBody" : {
+    "component" : {
+      "attributes" : { },
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "sectionConfig" : "{\"UUID\":\"491d2b65-e4f4-4b4c-a9a0-4f8dcbf27de2\",\"columns\":[{\"UUID\":\"14855498-91a1-494b-851b-c3a8a742b348\",\"columnName\":\"Column 1\",\"columnKey\":\"headerSection\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+          },
+          "children" : [ {
+            "id" : "14855498-91a1-494b-851b-c3a8a742b348",
+            "name" : "headerSection",
+            "title" : "Theme Header",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "491d2b65-e4f4-4b4c-a9a0-4f8dcbf27de2",
+          "type" : "component"
+        } ],
+        "id" : "24114024-440f-4131-96de-7aa53e5f4f30",
+        "name" : "header",
+        "title" : "Theme Header",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "sectionConfig" : "{\"UUID\":\"0df4a545-5d2b-4795-b1b3-d53b5a277f46\",\"columns\":[{\"UUID\":\"bfb29856-1df0-4a92-b21b-73bc1bbfcc28\",\"columnName\":\"Column 1\",\"columnKey\":\"footerSection\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : { },
+              "definition" : "c:scStats",
+              "id" : "12a17a7b-c049-40e2-b691-688169b82948",
+              "type" : "component"
+            } ],
+            "id" : "bfb29856-1df0-4a92-b21b-73bc1bbfcc28",
+            "name" : "footerSection",
+            "title" : "Theme Footer",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "0df4a545-5d2b-4795-b1b3-d53b5a277f46",
+          "type" : "component"
+        }, {
+          "attributes" : { },
+          "definition" : "c:scServices",
+          "id" : "58345832-94e4-4947-89fd-3aafaf51e322",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "authorName" : "LAURESSA JAIDA",
+            "authorTitle" : "COO, Practical Produce Manufacturing",
+            "quote" : "Solar Circles is a game-changer! I would highly recommend their products and services for anyone considering renewable energy. It has been so important for us as we continue to grow our company."
+          },
+          "definition" : "c:scTestimonial",
+          "id" : "b5b7b659-e7b0-41ef-8486-58812672b5af",
+          "type" : "component"
+        }, {
+          "attributes" : { },
+          "definition" : "c:scFooter",
+          "id" : "6501b6e7-1e81-4cac-8d77-2b556979a179",
+          "type" : "component"
+        } ],
+        "id" : "d5ff50a1-0586-468a-8e4c-88da8bdecde0",
+        "name" : "footer",
+        "title" : "Theme Footer",
+        "type" : "region"
+      } ],
+      "definition" : "community_byo:scopedHeaderAndFooter",
+      "id" : "b60ffe30-eba5-4718-a8e1-63b6c32627f4",
+      "type" : "component"
+    }
+  }
+}

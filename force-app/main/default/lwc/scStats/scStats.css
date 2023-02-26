@@ -1,0 +1,19 @@
+.stats {
+  display: flex;
+  padding: 48px;
+  margin: 48px;
+  background: #FCF9E6;
+  border-radius: 16px;
+  justify-content: space-around;
+  text-align: center;
+}
+.stat h2 {
+  font-weight: 400;
+  font-size: 80px;
+  margin: 0;
+}
+.stat p {
+  text-transform: uppercase;
+  margin: 0;
+  color: #327A66;
+}

@@ -1,0 +1,14 @@
+<template>
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="service-list">
+      <template for:each={services} for:item="service">
+        <div key={service.label} class="service-tile">
+          <img src={service.imageUrl}/>
+          <h3>{service.label}</h3>
+          <a href="#">Learn More →</a>
+        </div>
+      </template>
+    </div>
+  </section>
+</template>

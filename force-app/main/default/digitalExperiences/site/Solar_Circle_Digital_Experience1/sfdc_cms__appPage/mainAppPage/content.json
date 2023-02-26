@@ -1,0 +1,11 @@
+{
+  "type" : "sfdc_cms__appPage",
+  "title" : "main",
+  "contentBody" : {
+    "currentThemeId" : "Build_Your_Own_LWR",
+    "headMarkup" : "<meta charset=\"UTF-8\" />\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n<title>Welcome to Solar Circles</title>\n\n<style>\n    :root {\n        --dxp-c-section-content-spacing-block-end: 0;\n        --dxp-c-section-content-spacing-block-start: 0;\n        --dxp-c-section-content-spacing-inline-end: 0;\n        --dxp-c-section-content-spacing-inline-start: 0;\n        --dxp-s-section-content-spacing-block-end: 0;\n        --dxp-s-section-content-spacing-block-start: 0;\n        --dxp-s-section-content-spacing-inline-end: 0;\n        --dxp-s-section-content-spacing-inline-start: 0;\n        --dxp-style-c-padding-bottom: 0;\n        --dxp-style-c-padding-left: 0;\n        --dxp-style-c-padding-right: 0;\n        --dxp-style-c-padding-top: 0;\n        --dxp-c-footer-container-spacing-block-start: 0;\n        --dxp-c-footer-container-spacing-inline-end: 0;\n        --dxp-c-footer-container-spacing-block-end: 0;\n        --dxp-c-footer-container-spacing-inline-start: 0;\n        --dxp-c-component-wrapper-spacer-size: 0;\n        --dxp-s-component-wrapper-spacer-size: 0;\n        --dxp-c-header-content-max-width: 100%;\n        --dxp-s-header-content-max-width: 100%;\n        --dxp-c-section-columns-max-width: 100%;\n        --dxp-s-section-columns-max-width: 100%;\n        --dxp-c-footer-content-max-width: 100%;\n        --dxp-s-footer-content-max-width: 100%;\n    }\n    @font-face {\n        font-family: ibmFlexSansRegular;\n        src: url('{ basePath }/sfsites/c/resource/sc_assets/fonts/IBMPlexSans-Regular.ttf');\n    }\n    body {\n        margin: 0;\n        padding: 0;\n        background-color: #FFFFFF;\n        background-image: url('{ basePath }/sfsites/c/resource/sc_assets/images/hero.jpg');\n        background-repeat: no-repeat;\n        background-position: top;\n        background-size: 100% auto;\n\n        font-family: ibmFlexSansRegular;\n        color: #12392E;\n    }\n</style>",
+    "isLockerServiceEnabled" : true,
+    "isRelaxedCSPLevel" : false,
+    "templateName" : "talon-template-byo"
+  }
+}

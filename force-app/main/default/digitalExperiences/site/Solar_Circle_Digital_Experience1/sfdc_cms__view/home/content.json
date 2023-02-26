@@ -1,0 +1,67 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Home",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "sectionConfig" : "{\"UUID\":\"a7264f9e-3272-418a-9dc3-7a9afb2dff0e\",\"columns\":[{\"UUID\":\"c99aac3a-6024-4543-8097-2ff8e524eb85\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : { },
+              "definition" : "c:scHeader",
+              "id" : "a0b58f62-a3af-420d-a548-d9478882b21f",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "buttonLabel" : "Explore More",
+                "buttonUrl" : "#",
+                "title" : "Renewable energy. Affordable for everyone.",
+                "variant" : "transparent"
+              },
+              "definition" : "c:scJumbotron",
+              "id" : "9f81a970-c1d8-48b3-90e9-6e86cd80bc14",
+              "type" : "component"
+            } ],
+            "id" : "c99aac3a-6024-4543-8097-2ff8e524eb85",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "a7264f9e-3272-418a-9dc3-7a9afb2dff0e",
+          "type" : "component"
+        } ],
+        "id" : "c146adb2-1eb4-4ca8-9416-57c24767494b",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "Home",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "491650fc-cabb-448b-8867-7eef431223be",
+          "type" : "component"
+        } ],
+        "id" : "f8e3466a-dfd7-45cf-af68-e24f621d892a",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "38b9cad4-8482-4544-9b91-cd03f090b3e6",
+      "type" : "component"
+    },
+    "themeLayoutType" : "Inner",
+    "viewType" : "home"
+  }
+}
