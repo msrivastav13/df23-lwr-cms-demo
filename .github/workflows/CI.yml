@@ -22,7 +22,7 @@ jobs:
 
             # Checkout the source code
             - name: 'Checkout source code'
-              uses: actions/checkout@v2
+              uses: actions/checkout@v3
 
             # Set environment variable
             - name: 'Set environment variable'
@@ -30,6 +30,7 @@ jobs:
               run: |
                 branch=${GITHUB_REF##*/}
                 echo "DESTINATION=${branch^^}" >> $GITHUB_ENV
+                echo "UAT_USERNAME=${{ secrets.UAT_USERNAME }}" >> $GITHUB_ENV
 
             # Map branch specific environment variable for authentication
             - name: 'Generate branch specific environment variable name'
