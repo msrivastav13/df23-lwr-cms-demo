@@ -24,6 +24,13 @@ jobs:
             - name: 'Checkout source code'
               uses: actions/checkout@v2
 
+            # Set environment variable
+            - name: 'Set environment variable'
+              shell: bash
+              run: |
+                branch=${GITHUB_REF##*/}
+                echo "DESTINATION=${branch^^}" >> $GITHUB_ENV
+
             # Map branch specific environment variable for authentication
             - name: 'Generate branch specific environment variable name'
               id: authvars 
