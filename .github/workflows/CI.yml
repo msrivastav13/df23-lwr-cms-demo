@@ -22,7 +22,15 @@ jobs:
 
             # Checkout the source code
             - name: 'Checkout source code'
-              uses: actions/checkout@v2
+              uses: actions/checkout@v3
+
+            # Set environment variable
+            - name: 'Set environment variable'
+              shell: bash
+              run: |
+                branch=${GITHUB_REF##*/}
+                echo "DESTINATION=${branch^^}" >> $GITHUB_ENV
+                echo "UAT_USERNAME=${{ secrets.UAT_USERNAME }}" >> $GITHUB_ENV
 
             # Map branch specific environment variable for authentication
             - name: 'Generate branch specific environment variable name'
@@ -30,7 +38,7 @@ jobs:
               shell: bash
               run: |
                 branch=${GITHUB_REF##*/} 
-                echo "::set-output name=SFDX_URL::SFDX_URL_${branch^^}"
+                echo "SFDX_URL=SFDX_URL_${branch^^}" >> $GITHUB_OUTPUT
 
             # Store secret for salesforce org
             - name: 'Populate auth file with SFDX_URL secret'
@@ -40,7 +48,7 @@ jobs:
 
             # Authenticate to Salesforce org
             - name: 'Authenticate to Salesforce Org'
-              run: sfdx auth:sfdxurl:store -f ./SFDX_URL.txt -a sforg
+              run: sfdx auth sfdxurl store -f ./SFDX_URL.txt -a sforg
 
             # Deploy the experience cloud site
             - name: 'Deploy the experience cloud site'
