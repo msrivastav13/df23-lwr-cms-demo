@@ -8,5 +8,16 @@
   "name": "tdx23-exp-cms-demo",
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "57.0"
+  "sourceApiVersion": "57.0",
+  "replacements": [
+    {
+      "filename": "force-app/main/default/sites/Solar_Circle_Digital_Experience.site-meta.xml",
+      "stringToReplace": "mo+tdx23demo@salesforce.com",
+      "replaceWithEnv": "UAT_USERNAME",
+      "replaceWhenEnv": [{
+        "env": "DESTINATION",
+        "value": "UAT"
+      }]
+    }
+  ]
 }
