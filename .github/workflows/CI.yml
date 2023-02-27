@@ -23,6 +23,8 @@ jobs:
             # Checkout the source code
             - name: 'Checkout source code'
               uses: actions/checkout@v2
+              env: 
+                UAT_USERNAME: ${{ secrets.UAT_USERNAME }}
 
             # Set environment variable
             - name: 'Set environment variable'
