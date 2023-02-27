@@ -22,9 +22,7 @@ jobs:
 
             # Checkout the source code
             - name: 'Checkout source code'
-              uses: actions/checkout@v2
-              env: 
-                UAT_USERNAME: ${{ secrets.UAT_USERNAME }}
+              uses: actions/checkout@v3
 
             # Set environment variable
             - name: 'Set environment variable'
@@ -41,7 +39,7 @@ jobs:
               run: |
                 branch=${GITHUB_REF##*/} 
                 echo "SFDX_URL=SFDX_URL_${branch^^}" >> $GITHUB_OUTPUT
-                
+
             # Store secret for salesforce org
             - name: 'Populate auth file with SFDX_URL secret'
               shell: bash
