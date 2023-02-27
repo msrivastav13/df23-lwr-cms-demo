@@ -40,7 +40,7 @@ jobs:
 
             # Authenticate to Salesforce org
             - name: 'Authenticate to Salesforce Org'
-              run: sfdx auth:sfdxurl:store -f ./SFDX_URL.txt -a sforg
+              run: sfdx auth sfdxurl store -f ./SFDX_URL.txt -a sforg
 
             # Deploy the experience cloud site
             - name: 'Deploy the experience cloud site'
