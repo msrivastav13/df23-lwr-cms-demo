@@ -32,6 +32,7 @@ jobs:
               run: |
                 branch=${GITHUB_REF##*/}
                 echo "DESTINATION=${branch^^}" >> $GITHUB_ENV
+                echo "UAT_USERNAME=${{ secrets.UAT_USERNAME }}" >> $GITHUB_ENV
 
             # Map branch specific environment variable for authentication
             - name: 'Generate branch specific environment variable name'
@@ -40,7 +41,7 @@ jobs:
               run: |
                 branch=${GITHUB_REF##*/} 
                 echo "SFDX_URL=SFDX_URL_${branch^^}" >> $GITHUB_OUTPUT
-
+                
             # Store secret for salesforce org
             - name: 'Populate auth file with SFDX_URL secret'
               shell: bash
