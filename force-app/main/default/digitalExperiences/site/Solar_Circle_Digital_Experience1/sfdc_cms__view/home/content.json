@@ -18,10 +18,10 @@
               "type" : "component"
             }, {
               "attributes" : {
-                "buttonLabel" : "Explore More",
+                "buttonLabel" : "Learn More",
                 "buttonUrl" : "#",
                 "title" : "Renewable energy. Affordable for everyone.",
-                "variant" : "transparent"
+                "variant" : "primary-dark"
               },
               "definition" : "c:scJumbotron",
               "id" : "9f81a970-c1d8-48b3-90e9-6e86cd80bc14",
