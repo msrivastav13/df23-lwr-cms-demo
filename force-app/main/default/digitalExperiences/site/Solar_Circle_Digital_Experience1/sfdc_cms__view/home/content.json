@@ -18,7 +18,7 @@
               "type" : "component"
             }, {
               "attributes" : {
-                "buttonLabel" : "Explore More",
+                "buttonLabel" : "Learn More",
                 "buttonUrl" : "#",
                 "title" : "Renewable energy. Affordable for everyone.",
                 "variant" : "transparent"
