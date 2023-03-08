@@ -2,8 +2,8 @@
 
 This is a sample project that has
 <ol>
-  <li>Salesforce Experience Cloud LWR Site</li>
-  <li>Digital Experience Bundle metadata</li>
+  <li>Salesforce Experience Cloud Enhanced LWR Site</li>
+  <li>Digital Experience Bundle metadata and related metadata for deployment from one org to another</li>
   <li>Deployment scripts using github action for CI/CD</li>
 </ol>
 
@@ -20,5 +20,3 @@ we are using the `replacements` property in the `sfdx-project.json` file to repl
 ## Screenshot of final deployed site
 
 ![Screen Shot 2023-03-07 at 11 00 29 PM](https://user-images.githubusercontent.com/2276156/223641821-454b1dbb-73b9-4e5d-82a6-27b8e47c3b78.png)
-
-
