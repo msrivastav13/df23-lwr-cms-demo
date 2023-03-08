@@ -1,18 +1,24 @@
-# Salesforce DX Project: Next Steps
+# Digital Experience Bundle Sample Project
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+This is a sample project that has
+<ol>
+  <li>Salesforce Experience Cloud LWR Site</li>
+  <li>Digital Experience Bundle metadata</li>
+  <li>Deployment scripts using github action for CI/CD</li>
+</ol>
 
-## How Do You Plan to Deploy Your Changes?
+## What is the purpose of this repo?
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+This repo has a sample Enhanced LWR Site built using Lightning Web Components(LWC). The purpose of this repo is to show you how you can use digital experience bundle metadata to deploy changes from one salesforce to another org
 
 ## Configure Your Salesforce DX Project
 
 The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
 
-## Read All About It
+we are using the `replacements` property in the `sfdx-project.json` file to replace environment specific metadata.
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+## Screenshot of final deployed site
+
+![Screen Shot 2023-03-07 at 11 00 29 PM](https://user-images.githubusercontent.com/2276156/223641821-454b1dbb-73b9-4e5d-82a6-27b8e47c3b78.png)
+
+
