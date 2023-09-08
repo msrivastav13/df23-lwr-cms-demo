@@ -8,11 +8,14 @@
           "attributes" : {
             "backgroundImageConfig" : "",
             "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "dxpStyle" : { },
             "sectionConfig" : "{\"UUID\":\"a7264f9e-3272-418a-9dc3-7a9afb2dff0e\",\"columns\":[{\"UUID\":\"c99aac3a-6024-4543-8097-2ff8e524eb85\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
           },
           "children" : [ {
             "children" : [ {
-              "attributes" : { },
+              "attributes" : {
+                "dxpStyle" : { }
+              },
               "definition" : "c:scHeader",
               "id" : "a0b58f62-a3af-420d-a548-d9478882b21f",
               "type" : "component"
@@ -20,6 +23,7 @@
               "attributes" : {
                 "buttonLabel" : "Explore More",
                 "buttonUrl" : "#",
+                "dxpStyle" : { },
                 "title" : "Renewable energy. Affordable for everyone.",
                 "variant" : "primary-dark"
               },
@@ -45,6 +49,7 @@
           "attributes" : {
             "customHeadTags" : "",
             "description" : "",
+            "dxpStyle" : { },
             "pageTitle" : "Home",
             "recordId" : "{!recordId}"
           },
@@ -61,6 +66,7 @@
       "id" : "38b9cad4-8482-4544-9b91-cd03f090b3e6",
       "type" : "component"
     },
+    "dataProviders" : [ ],
     "themeLayoutType" : "Inner",
     "viewType" : "home"
   }

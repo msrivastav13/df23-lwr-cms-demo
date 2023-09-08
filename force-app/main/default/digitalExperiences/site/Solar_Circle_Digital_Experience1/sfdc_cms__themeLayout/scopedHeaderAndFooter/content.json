@@ -9,6 +9,7 @@
           "attributes" : {
             "backgroundImageConfig" : "",
             "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "dxpStyle" : { },
             "sectionConfig" : "{\"UUID\":\"491d2b65-e4f4-4b4c-a9a0-4f8dcbf27de2\",\"columns\":[{\"UUID\":\"14855498-91a1-494b-851b-c3a8a742b348\",\"columnName\":\"Column 1\",\"columnKey\":\"headerSection\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
           },
           "children" : [ {
@@ -30,11 +31,14 @@
           "attributes" : {
             "backgroundImageConfig" : "",
             "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "dxpStyle" : { },
             "sectionConfig" : "{\"UUID\":\"0df4a545-5d2b-4795-b1b3-d53b5a277f46\",\"columns\":[{\"UUID\":\"bfb29856-1df0-4a92-b21b-73bc1bbfcc28\",\"columnName\":\"Column 1\",\"columnKey\":\"footerSection\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
           },
           "children" : [ {
             "children" : [ {
-              "attributes" : { },
+              "attributes" : {
+                "dxpStyle" : { }
+              },
               "definition" : "c:scStats",
               "id" : "12a17a7b-c049-40e2-b691-688169b82948",
               "type" : "component"
@@ -48,7 +52,9 @@
           "id" : "0df4a545-5d2b-4795-b1b3-d53b5a277f46",
           "type" : "component"
         }, {
-          "attributes" : { },
+          "attributes" : {
+            "dxpStyle" : { }
+          },
           "definition" : "c:scServices",
           "id" : "58345832-94e4-4947-89fd-3aafaf51e322",
           "type" : "component"
@@ -56,13 +62,16 @@
           "attributes" : {
             "authorName" : "LAURESSA JAIDA",
             "authorTitle" : "COO, Practical Produce Manufacturing",
+            "dxpStyle" : { },
             "quote" : "Solar Circles is a game-changer! I would highly recommend their products and services for anyone considering renewable energy. It has been so important for us as we continue to grow our company."
           },
           "definition" : "c:scTestimonial",
           "id" : "b5b7b659-e7b0-41ef-8486-58812672b5af",
           "type" : "component"
         }, {
-          "attributes" : { },
+          "attributes" : {
+            "dxpStyle" : { }
+          },
           "definition" : "c:scFooter",
           "id" : "6501b6e7-1e81-4cac-8d77-2b556979a179",
           "type" : "component"
