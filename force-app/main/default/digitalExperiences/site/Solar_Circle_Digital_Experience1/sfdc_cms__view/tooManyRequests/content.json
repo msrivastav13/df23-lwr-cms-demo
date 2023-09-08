@@ -8,18 +8,22 @@
           "attributes" : {
             "backgroundImageConfig" : "",
             "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "dxpStyle" : { },
             "sectionConfig" : "{\"UUID\":\"696c8bdb-0412-4c09-b92c-53db244dae22\",\"columns\":[{\"UUID\":\"181587a1-c298-4a05-b4cf-668154d119c0\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
           },
           "children" : [ {
             "children" : [ {
               "attributes" : {
+                "dxpStyle" : { },
                 "richTextValue" : "<div style=\"display: flex; align-items: center; flex-direction: column; margin: 60px 25px 30px 25px;\">\n\t<div style=\"background-image: url(assets/img/tooManyRequests.svg); background-size: contain; height: 350px; width: 100%; background-repeat: no-repeat; background-position: center;\"></div>\n</div>\n<div style=\"margin: 0 25px; text-align: center;\">\n\t<h1 class=\"slds-text-heading_large\">Looks like the site is experiencing higher than usual demand&#8230;</h1>\n\t<p class=\"slds-text-heading_small\">Don't go anywhere. We'll redirect you in a moment.</p>\n</div>"
               },
               "definition" : "community_builder:htmlEditor",
               "id" : "3da38c70-8d7f-4eca-993d-2bcb578aa4cf",
               "type" : "component"
             }, {
-              "attributes" : { },
+              "attributes" : {
+                "dxpStyle" : { }
+              },
               "definition" : "experience_availability:autoRefresh",
               "id" : "cc902326-2393-4f13-94bd-a2468059a23e",
               "type" : "component"
@@ -42,6 +46,7 @@
       "id" : "4f2dda81-1862-4359-99ba-4de77367b7eb",
       "type" : "component"
     },
+    "dataProviders" : [ ],
     "themeLayoutType" : "ServiceNotAvailable",
     "viewType" : "too-many-requests"
   }
