@@ -52,4 +52,4 @@ jobs:
 
             # Deploy the experience cloud site
             - name: 'Deploy the experience cloud site'
-              run: sfdx force source deploy --sourcepath="force-app/main/default" --apiversion=57.0 -u sforg
+              run: sfdx force source deploy --sourcepath="force-app/main/default" --apiversion=58.0 -u sforg
