@@ -1,23 +1,25 @@
 {
-  "packageDirectories": [
-    {
-      "path": "force-app",
-      "default": true
-    }
-  ],
-  "name": "tdx23-exp-cms-demo",
-  "namespace": "",
-  "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "58.0",
-  "replacements": [
-    {
-      "filename": "force-app/main/default/sites/Solar_Circle_Digital_Experience.site-meta.xml",
-      "stringToReplace": "mo+tdx23demo@salesforce.com",
-      "replaceWithEnv": "UAT_USERNAME",
-      "replaceWhenEnv": [{
-        "env": "DESTINATION",
-        "value": "UAT"
-      }]
-    }
-  ]
+    "packageDirectories": [
+        {
+            "path": "force-app",
+            "default": true
+        }
+    ],
+    "name": "df23-exp-cms-demo",
+    "namespace": "",
+    "sfdcLoginUrl": "https://login.salesforce.com",
+    "sourceApiVersion": "58.0",
+    "replacements": [
+        {
+            "filename": "force-app/main/default/sites/Solar_Circle_Digital_Experience.site-meta.xml",
+            "stringToReplace": "mo+tdx23demo@salesforce.com",
+            "replaceWithEnv": "UAT_USERNAME",
+            "replaceWhenEnv": [
+                {
+                    "env": "DESTINATION",
+                    "value": "UAT"
+                }
+            ]
+        }
+    ]
 }
