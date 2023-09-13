@@ -66,4 +66,4 @@ jobs:
 
             # Deploy the experience cloud site
             - name: "Deploy the experience cloud site"
-              run: sf project deploy start -d force-app --api-version=58.0 -o sforg
+              run: sf project deploy start -d force-app --api-version=58.0 -o sforg --ignore-conflicts
